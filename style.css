@@ -1,0 +1,128 @@
+/* General Body Styling */
+body {
+    font-family: 'Arial', sans-serif; /* Sets a clean, modern font */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures padding and border are included in element's width and height */
+    background-color: #f4f4f4; /* Light gray background for a clean look */
+    color: #333; /* Dark text for good readability */
+}
+
+/* Header Navigation Bar Styling */
+.navbar {
+    background-color: cadetblue; /* Dark background for the navbar */
+    color: white; /* White text for contrast */
+    padding: 10px 20px; /* Padding around the navbar */
+}
+
+.navbar nav ul {
+    list-style-type: none; /* Removes bullet points */
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Centers the navigation items */
+}
+
+.navbar nav ul li {
+    display: inline; /* Makes the list items appear horizontally */
+    margin-right: 20px; /* Spacing between each list item */
+}
+
+.navbar nav ul li a {
+    color: white; /* White text color */
+    text-decoration: none; /* Removes underline */
+    font-size: 18px; /* Slightly larger text for clarity */
+}
+
+.navbar nav ul li a:hover {
+    color: #ff6347; /* Changes text color to tomato red on hover */
+}
+
+/* Main Content Styling */
+.content {
+    max-width: 1200px; /* Ensures content doesn't stretch too wide */
+    margin: 0 auto; /* Centers the content */
+    padding: 20px; /* Adds padding inside the content */
+}
+
+.section {
+    background-color: white; /* White background for the sections */
+    margin: 20px 0; /* Adds spacing between sections */
+    padding: 20px; /* Padding inside each section */
+    border-radius: 8px; /* Rounded corners for a soft look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow around sections */
+}
+
+.section h2 {
+    font-size: 28px; /* Larger heading for section titles */
+    margin-bottom: 10px; /* Spacing between heading and content */
+    color: cadetblue; /* Dark text for headings */
+}
+
+.section p {
+    font-size: 18px; /* Sets a comfortable reading size for paragraphs */
+    line-height: 1.6; /* Adds spacing between lines of text for better readability */
+    margin-bottom: 20px; /* Spacing between paragraphs */
+}
+
+.section ul {
+    margin-left: 20px; /* Indentation for list items */
+}
+
+.section ul li {
+    margin-bottom: 10px; /* Spacing between list items */
+}
+
+/* Footer Styling */
+.footer {
+    text-align: center; /* Centers the footer text */
+    background-color: cadetblue; /* Dark background for the footer */
+    color: white; /* White text color */
+    padding: 10px; /* Padding inside the footer */
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px; /* Smaller text for footer */
+}
+
+/* Responsive Styling for Mobile Devices */
+@media (max-width: 768px) {
+    .navbar nav ul {
+        display: flex;
+        flex-direction: column; /* Stack the navbar items vertically on smaller screens */
+        align-items: center; /* Center the navbar items */
+    }
+
+    .navbar nav ul li {
+        margin-bottom: 10px; /* Adds spacing between vertical items */
+    }
+
+    .content {
+        padding: 10px; /* Less padding on smaller screens */
+    }
+
+    .section h2 {
+        font-size: 24px; /* Slightly smaller section titles on mobile */
+    }
+
+    .section p {
+        font-size: 16px; /* Smaller text for better fit on small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .section {
+        padding: 15px; /* Less padding for very small screens */
+    }
+
+    .section h2 {
+        font-size: 20px; /* Further reduce font size for tiny screens */
+    }
+
+    .section p {
+        font-size: 14px; /* Even smaller text for compact screens */
+    }
+}
